@@ -2,7 +2,7 @@
     box-sizing: border-box;
     display: block;
     width: 1200px;
-    height: 3000px;
+    height: auto;
     border: 2px solid white;
     background-color: white;
     box-shadow: 0 5px 20px gray;
