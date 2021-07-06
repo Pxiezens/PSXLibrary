@@ -10,4 +10,25 @@
     padding-right: 45px;
     margin-left: auto;
     margin-right: auto;
+    font-size: large;
+}
+
+.imagine1 {
+    width: 250;
+    height: 140;
+    ;
+}
+.box2{
+    display:flex;
+}
+.box3 {
+width: 300px;
+height: auto;
+box-shadow:0 5px 20px gray;
+box-sizing: border-box;
+text-align: center;
+margin: 5px;
+}
+a:link {
+    text-decoration: none
 }
