@@ -1,5 +1,4 @@
 .box1 {
-    
     box-sizing: border-box;
     display: block;
     width: 1200px;
@@ -18,21 +17,30 @@
 .imagine1 {
     width: 300px;
     height: 180px;
-    ;
-}
-.imagine1:hover {
-    width: 330px;
-    height: 180px;
     transition: all 0.3s 0s ease;
 }
+
+
+/*.imagine1:hover {*/
+/*    width: 330px;*/
+/*    height: 180px;*/
+/*    transition: all 0.3s 0s ease;*/
+/*}*/
+
+.box3:hover img {
+    width: 330px;
+    height: 190px;
+    transition: all 0.3s 0s ease;
+}
+
 .box2{
     display:flex;
-    margin: 5px
+    margin: 5px;
 }
 .box3 {
 width: 300px;
 height: 250px;
-box-shadow:0 5px 20px gray;
+box-shadow:0 3px 10px gray;
 box-sizing: border-box;
 text-align: center;
 margin: 5px;
@@ -46,7 +54,10 @@ a:link {
     height: 270px;
     margin-top: 0px;
     transition: all 0.3s 0s ease;
+    box-shadow: 0 4px 15px;
 }
+
+
 .box{
     box-sizing: border-box;
     display: block;
@@ -76,16 +87,20 @@ a:link {
     background-color: white;
 }
 .box4{
-    border-color: gray;
-    border: 3px;
     width: 180px;
     height: 60px;
-    border-color: white;
-    background-color: teal;
+    background-color: rgb(33, 38, 53);
     text-align: center;
     padding-bottom: 15px;
+    color: white;
 }
 .box4:hover{
-    background-color: rgb(74, 153, 153);
+    background-color: rgb(61, 71, 99);
     transition: all 0.3s 0s ease;
+}
+.tab-background{
+    background-color: rgb(33, 38, 53);
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
