@@ -2,90 +2,48 @@
 
 // Chú ý: Tháng 2 của năm nhuận có 29 ngày, năm không nhuận có 28 ngày => cần kiểm tra year truyền vào có phải năm nhuận hay không
 
-
 function songaytrongthang() {
   let result = "thang ";
-const THANG1 = 31;
-const THANG3 = 31;
-const THANG4 = 30;
-const THANG5 = 31;
-const THANG6 = 30;
-const THANG7 = 31;
-const THANG8 = 31;
-const THANG9 = 30;
-const THANG10 = 31;
-const THANG11 = 30;
-const THANG12 = 31;
-let thang2 = 28;
-let selectedyear = document.getElementById("select-year").value;
-let selectedmonth = document.getElementById("select-month").value;
+  let months = {
+    1 : 31,
+    2 : 28,
+    3 : 31,
+    4 : 30,
+    5 : 31,
+    6 : 30,
+    7 : 31,
+    8 : 31,
+    9 : 30,
+    10 : 31,
+    11 : 30,
+    12 : 31,
+  }
 
+  let selectedyear = document.getElementById("select-year").value;
+  let selectedmonth = document.getElementById("select-month").value;
 
-// Lay ket qua thang 2
-  if (selectedyear % 100 === 0 && selectedyear % 400 === 0)  {
-    thang2 = 29
+  // Lay ket qua thang 2
+  if (selectedyear % 100 === 0 && selectedyear % 400 === 0) {
+    months[2] = 29;
   } else if (selectedyear % 100 !== 0 && selectedyear % 4 === 0) {
-    thang2 = 29
+    months[2] = 29;
   } else {
-    thang2 = 28
+    months[2] = 28;
   }
-console.log("thang2",thang2);
-
-  switch (Number(selectedmonth)) {
-    case 1: {
-      result += selectedmonth + " co " + THANG1 + " ngay";
-
-      break;
-    }
-    case 2: {
-      result += selectedmonth + " co " + thang2 + " ngay";
-      break;
-    }
-    case 3: {
-      result += selectedmonth + " co " + THANG3 + " ngay";
-      break;
-    }
-    case 4: {
-      result += selectedmonth + " co " + THANG4 + " ngay";
-      break;
-    }
-    case 5: {
-      result += selectedmonth + " co " + THANG5 + " ngay";
-      break;
-    }
-    case 6: {
-      result += selectedmonth + " co " + THANG6 + " ngay";
-      break;
-    }
-    case 7: {
-      result += selectedmonth + " co " + THANG7 + " ngay";
-      break;
-    }
-    case 8: {
-      result += selectedmonth + " co " + THANG8 + " ngay";
-      break;
-    }
-    case 9: {
-      result += selectedmonth + " co " + THANG9 + " ngay";
-      break;
-    }
-    case 10: {
-      result += selectedmonth + " co " + THANG10 + " ngay";
-      break;
-    }
-    case 11: {
-      result += selectedmonth + " co " + THANG11 + " ngay";
-      break;
-    }
-    case 12: {
-      result += selectedmonth + " co " + THANG12 + " ngay";
-      break;
-    }
-    default: {
+  console.log("thang2", months[2]);
+   
+  if(!selectedmonth || !selectedyear) {
+    result = "Nhap day du thang hoac nam";
+  } else {
+    if(selectedmonth > 0 && selectedmonth <13) {
+      result += selectedmonth + " co " + months[selectedmonth] + " ngay";
+    } else {
       result += selectedmonth + " khong ton tai";
-      break;
     }
   }
+
+
+  
   document.getElementById("result").innerHTML = result;
 }
 // Bài 2: Viết function sử dụng vòng lặp từ 1->100
@@ -149,5 +107,13 @@ if (num % 2 == 0) {
 }
 
 // Bài 6: Viết function truyền vào 1 số nguyên dương bất kỳ. Tính tổng tất cả các số nguyên tố mà nhỏ hơn hoặc bằng tham số truyền vào.
-
+function totalelementnumber() {
+  
+}
 // Bài 7: Viết function truyền vào 1 số nguyên dương bất kỳ. Tính tổng tất cả các ước số của số đó.
+
+// let newArray = [1,2,3,4,5]
+
+// newArray.splice(1,1)
+
+// console.log("newArray", newArray);
