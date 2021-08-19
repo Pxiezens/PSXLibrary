@@ -3,6 +3,7 @@
   margin: 0;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .container {
@@ -68,4 +69,12 @@
     width: 180px;
     height: 55px;
 display: flex;
+}
+.main-searchbar {
+    height: 30px;
+margin-left: 750px;
+margin-top: 10px;
+}
+a {
+    color: rgb(24, 24, 24);
 }
