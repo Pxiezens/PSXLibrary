@@ -35,6 +35,13 @@
 
 #main-background {
   width: 100%;
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 .main-tab {
   background-color: rgb(24, 98, 121);
@@ -109,22 +116,21 @@ a {
   padding-top: 50px;
 }
 .discord-box {
-  height: 150px;
-  width: 150px;
+  height: auto;
+  width: auto;
   display: block;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 55px;
 
 }
-.discord-img {
+.discord-img img {
   height: 100px;
   width: 100px;
-  transition-duration: 0.1s;
+  transition: all ease-in 0.1s;
   margin-bottom: 0px;
 }
-.discord-img:hover {
+.discord-img:hover img {
   height: 110px;
   width: 110px;
-  transition-duration: 0.3s;
+  transition: all ease-out 0.3s;
 }
